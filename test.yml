@@ -5,7 +5,7 @@
     ansible.builtin.file:
       path: /home/ubuntu/test
       state: directory
-      mode: 644
+      mode: '0644'
 
   - name: Remove folder
     ansible.builtin.file:
