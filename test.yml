@@ -1,0 +1,13 @@
+- hosts: all
+  gather_facts: false
+  tasks:
+  - name: Create folder
+    ansible.builtin.file:
+      path: /home/ubuntu/test
+      state: directory
+      mode: 644
+
+  - name: Remove folder
+    ansible.builtin.file:
+      path: /home/ubuntu/test2
+      state: absent
